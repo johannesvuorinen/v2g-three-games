@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>v2g · three.js</title>
+    <script type="module" crossorigin src="./assets/index-CxYoY76i.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DklUfLNV.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- v2g attribution — KEEP this element and its id; it links back to the source video -->
+    <a id="v2g-attrib" href="https://www.youtube.com/watch?v=HRlrbeGMDjs" target="_blank" rel="noopener">Made from video: https://www.youtube.com/watch?v=HRlrbeGMDjs</a>
+    <div id="hud" aria-live="polite">
+      <div id="score-panel">
+        <div class="stat wide"><span>Score</span><strong id="score-value">0</strong></div>
+        <div class="stat"><span>Combo</span><strong id="combo-value">x1</strong></div>
+        <div class="stat"><span>Loaded</span><strong id="loaded-value">0/12</strong></div>
+        <div class="stat"><span>Misses</span><strong id="misses-value">0/5</strong></div>
+        <div class="stat"><span>Time</span><strong id="time-value">75</strong></div>
+      </div>
+      <div id="feedback"></div>
+      <div id="ramp-pill">Ramp <strong id="ramp-state" data-state="up">UP</strong></div>
+      <div id="end-panel">
+        <strong id="end-title">SHIFT ENDED</strong>
+        <span id="end-copy">0/12 cars loaded - 0 pts</span>
+        <small>Tap to restart</small>
+      </div>
+    </div>
+  </body>
+</html>
