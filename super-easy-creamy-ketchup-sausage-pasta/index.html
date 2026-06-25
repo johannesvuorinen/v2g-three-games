@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>v2g · three.js</title>
+    <script type="module" crossorigin src="./assets/index-C4xLy59l.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DMiL4FqQ.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    <div id="game-ui">
+      <section id="top-hud" aria-live="polite">
+        <div id="recipe-label">Butter.</div>
+        <div id="hud-stats">
+          <div class="stat-chip">
+            <span>Time</span>
+            <strong id="time-text">1:30</strong>
+          </div>
+          <div class="stat-chip">
+            <span>Score</span>
+            <strong id="score-text">0</strong>
+          </div>
+          <div class="stat-chip">
+            <span>Step</span>
+            <strong id="step-text">1/9</strong>
+          </div>
+        </div>
+        <div id="meter-stack">
+          <div class="meter-row">
+            <span>Heat</span>
+            <div class="meter-track"><i id="heat-fill"></i></div>
+          </div>
+          <div class="meter-row">
+            <span>Quality</span>
+            <div class="meter-track"><i id="quality-fill"></i></div>
+          </div>
+          <div class="meter-row">
+            <span>Stir</span>
+            <div class="meter-track"><i id="stir-fill"></i></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="ingredient-tray" aria-label="Ingredients">
+        <button class="ingredient-button" type="button" data-ingredient="butter">
+          <span class="ingredient-icon butter-icon"></span>
+          <span>Butter</span>
+        </button>
+        <button class="ingredient-button" type="button" data-ingredient="sausage">
+          <span class="ingredient-icon sausage-icon"></span>
+          <span>Sausage</span>
+        </button>
+        <button class="ingredient-button" type="button" data-ingredient="ketchup">
+          <span class="ingredient-icon ketchup-icon"></span>
+          <span>Ketchup</span>
+        </button>
+        <button class="ingredient-button" type="button" data-ingredient="pasta">
+          <span class="ingredient-icon pasta-icon"></span>
+          <span>Pasta</span>
+        </button>
+        <button class="ingredient-button" type="button" data-ingredient="milk">
+          <span class="ingredient-icon milk-icon"></span>
+          <span>Milk</span>
+        </button>
+        <button class="ingredient-button" type="button" data-ingredient="cheese">
+          <span class="ingredient-icon cheese-icon"></span>
+          <span>Cheese</span>
+        </button>
+        <button class="ingredient-button" type="button" data-ingredient="herbs">
+          <span class="ingredient-icon herbs-icon"></span>
+          <span>Herbs</span>
+        </button>
+      </section>
+
+      <section id="result-panel" hidden>
+        <div id="result-stars">---</div>
+        <h1 id="result-title">Creamy sausage pasta</h1>
+        <p id="result-copy">Score 0</p>
+        <button id="restart-button" type="button">Cook again</button>
+      </section>
+    </div>
+    <!-- v2g attribution — KEEP this element and its id; it links back to the source video -->
+    <a id="v2g-attrib" href="https://www.youtube.com/watch?v=YrAS-0lSpnU" target="_blank" rel="noopener">Made from video: https://www.youtube.com/watch?v=YrAS-0lSpnU</a>
+  </body>
+</html>
